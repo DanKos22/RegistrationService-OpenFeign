@@ -21,7 +21,9 @@ public class RegistrationController {
     // Method to handle user registration requests
     public String confirmDetails(@RequestBody UserDetails user){
         String ConfirmationMessage = String.format("Received details for %s with email %s", user.getName(), user.getEmail());
+        //Return information back to UserController
         return ConfirmationMessage;
+
     }
 
     //@PostMapping("/confirm")
